@@ -102,7 +102,9 @@ int main() {
 
   std::cout << "\n";
 
-  std::system("pause");
+  std::cout << "Press enter to exit...";
+  std::cin.ignore(std::cin.rdbuf()->in_avail());
+  std::cin.ignore();
 
   return 0;
 
